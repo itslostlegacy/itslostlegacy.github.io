@@ -1,6 +1,6 @@
 let i = 0;
 let title = 'ItsLostLegacy';
-let speed = 50; 
+let speed = 100; 
 
 function typeWriter() {
   if (i < title.length) {
@@ -8,4 +8,9 @@ function typeWriter() {
     i++;
     setTimeout(typeWriter, speed);
   }
+}
+
+function modeChange() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
 }
