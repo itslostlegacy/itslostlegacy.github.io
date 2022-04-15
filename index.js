@@ -11,7 +11,6 @@ function typeWriter() {
 }
 
 async function secretFunction() {
-  document.getElementById("btn").innerHTML = "what did i tell you?";
   var height = document.body.clientHeight - 200;
   var width = document.body.clientWidth - 200;
   var b = document.querySelector("button");
