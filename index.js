@@ -1,5 +1,5 @@
 let i = 0;
-let title = 'ItsLostLegacy';
+let title = '</ItsLostLegacy>';
 let speed = 100;
 
 function typeWriter() {

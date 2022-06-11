@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=JetBrains%20Mono");
+
 :root {
   --textcolor: #FFFFFF;
   --textcolorhover: #000000;
@@ -16,7 +19,11 @@ body {
   color: var(--textcolor);
   background-color: var(--background-color);
   text-align: center;
-  font-family: Montserrat;
+  font-family: "Poppins";
+}
+
+h1 {
+  font-family: "JetBrains Mono";
 }
 
 .box {
@@ -65,12 +72,6 @@ a {
   color: var(--textcolor);
 }
 
-a:hover {
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--textcolorhover);
-}
-
 button {
   padding: 10px;
   font-family: Montserrat;
@@ -101,7 +102,6 @@ button:active {
 }
 
 .child:hover {
-  color: var(--text-color-hover);
-  background-color: var(--projectbackgroundhover);
-  border-radius: 5px;
+  box-shadow: 5px -5px teal;
+  transform: translate(-5px, 5px);
 }
