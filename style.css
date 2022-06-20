@@ -7,7 +7,7 @@
   --background-color: #0D0907;
   --boxbackground: #121212;
   --projectbackground: #343434;
-  --projectbackgroundhover: #CBCBCB;
+  --projectbackgroundhover: #242424;
   --boxgrad1: #3A1C71;
   --boxgrad2: #FFAF7B;
   --iconcolor: #FFFFFF;
@@ -39,6 +39,11 @@ h1 {
   background-origin: border-box;
   background-clip: content-box, border-box;
   border-image-slice: 1;
+}
+
+.box p {
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 #firstbox {
@@ -97,11 +102,15 @@ button:active {
   justify-content: center;
   width: 200px;
   background-color: var(--projectbackground);
+  transition: box-shadow 0.5s ease-in;
   border-radius: 5px;
   margin: auto;
 }
 
 .child:hover {
-  box-shadow: 5px -5px teal;
-  transform: translate(-5px, 5px);
+  box-shadow: 5px 5px var(--projectbackgroundhover);
+}
+
+#a {
+  display: block;
 }
