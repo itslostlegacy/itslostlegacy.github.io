@@ -26,14 +26,20 @@ h1 {
   font-family: "JetBrains Mono";
 }
 
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .box {
-  width: 75%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   border: double 10px transparent;
   border-radius: 30px;
-  /*CBCBCB*/
   background-image: linear-gradient(var(--boxbackground), var(--boxbackground)),
     linear-gradient(to bottom right, var(--boxgrad1) 0%, var(--boxgrad2) 100%);
   background-origin: border-box;
@@ -48,17 +54,20 @@ h1 {
 
 #firstbox {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 #firstbox a {
   color: var(--iconcolor);
   font-size: 24px;
-  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  transition: color 1s;
 }
 
 #firstbox a:hover {
   color: var(--iconcolorhover);
-  background-color: var(--iconbackgroundhover);
   border-radius: 5px;
 }
 
@@ -102,7 +111,7 @@ button:active {
   justify-content: center;
   width: 200px;
   background-color: var(--projectbackground);
-  transition: box-shadow 0.5s ease-in;
+  transition: box-shadow 1s;
   border-radius: 5px;
   margin: auto;
 }
